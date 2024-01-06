@@ -13,28 +13,28 @@ public class NewClass {
         liczby[4] = 41;
         liczby[5] = 17;
 
-        System.out.print("Dla liczb: ");
+        System.out.print("\nDla liczb: \n");
 
-        for (i = 0; i <= 5; i++) {
+        for (i = 0; i <= 5; i++)
             if (i <= 4)
                 System.out.print(liczby[i] + ", ");
             else
-                System.out.print
-                        (liczby[i] + " ");
+                System.out.print(liczby[i] + ". ");
 
-            for (i = 1; i <= 5; i++) //algorytm sortowania babelkowego
+        for (i = 1; i <= 5; i++) //algorytm sortowania babelkowego
+        {
+            for (j = 5; j >= i; j--)
             {
-                for (j = 5; j >= i; j--) {
-                    if (liczby[j - 1] > liczby[j]) {
-                        x = liczby[j - 1];
-                        liczby[j - 1] = liczby[j];
-                        liczby[j] = x;
-                    }//j
+                if (liczby[j - 1] > liczby[j])
+                {
+                    x = liczby[j - 1];
+                    liczby[j - 1] = liczby[j];
+                    liczby[j] = x;
                 }
-            }//i
-        }
+            }//j
+        }//i
 
-        System.out.println("");
+        System.out.println("\n");
         System.out.println("liczby uporzadkowane to: ");
 
         for (i = 0; i <= 5; i++)
@@ -43,7 +43,7 @@ public class NewClass {
                 System.out.print(liczby[i] + ", ");
             else
                 System.out.print(liczby[i] + ".");
-                System.out.print("");
         }
+        System.out.println("\n");
     }
 }
